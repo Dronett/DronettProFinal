@@ -1,1 +1,43 @@
-<h1>Demande de devis</h1><form><input type='text' placeholder='Nom'><br><input type='email' placeholder='Email'><br><textarea placeholder='Votre demande'></textarea><br><button type='submit'>Envoyer</button></form>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demander un devis - Dronett'Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">DP</div>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="contact.html" class="active">Devis</a>
+      <a href="mentions.html">Mentions</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Demander un devis</h1>
+    <form>
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" required>
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Votre demande :</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 Dronett'Pro - Nettoyage & inspection par drone</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
