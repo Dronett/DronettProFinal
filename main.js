@@ -1,7 +1,9 @@
-document.getElementById("devisForm")?.addEventListener("submit", function(e) {
-  e.preventDefault();
-  document.getElementById("popup").classList.add("show");
-  setTimeout(() => {
-    document.getElementById("popup").classList.remove("show");
-  }, 3000);
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.querySelector('form');
+  if(form){
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Votre demande a bien été envoyée !');
+    });
+  }
 });
