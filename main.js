@@ -1,3 +1,7 @@
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("Dronett'Pro site chargé.");
+document.getElementById("devisForm")?.addEventListener("submit", function(e) {
+  e.preventDefault();
+  document.getElementById("popup").classList.add("show");
+  setTimeout(() => {
+    document.getElementById("popup").classList.remove("show");
+  }, 3000);
 });
